@@ -5,6 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
+  
   build-docs:
     name: Build docs
     runs-on: ubuntu-latest
@@ -32,6 +33,7 @@ jobs:
           path: ./docs/_site
 
   
+
   deploy-pages:
     name: Deploy Pages
     runs-on: ubuntu-latest
