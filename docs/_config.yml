@@ -3,7 +3,13 @@ plugins:
   - jekyll-remote-theme
 
 baseurl: /HC26-Castillo-Alberto-Senior-Project
-remote_theme: pages-themes/minimal
+remote_theme: pages-themes/minimal   
 
 title: HC26 Senior Project
 description: Project site
+
+exclude:
+  - tmp
+
+
+
