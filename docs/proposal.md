@@ -1,7 +1,9 @@
 ---
-layout: page
 title: About
+layout: post
 ---
+
+
 # Proposal Draft: Dual-Mode Arcade Game (Brick Breaker + Pong)
 
 ## Platform
@@ -47,6 +49,6 @@ title: About
 
 ## Deliverables
 - Fully functioning game with two playable modes.  
-- Annotated bibliography with references (Pygame docs, tutorials, example projects).  
+- Annotated bibliography with references (Pygame ©docs, tutorials, example projects).  
 - GitHub repository with code and documentation.  
 - Final write-up and demo video.  

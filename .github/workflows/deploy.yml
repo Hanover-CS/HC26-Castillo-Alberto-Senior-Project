@@ -46,6 +46,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-V gothub actions vs the proposal of the related queadratuci for the more needed
 
 
