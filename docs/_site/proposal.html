@@ -11,13 +11,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<!--[if lte IE 8]><script src="/HC26-Castillo-Alberto-Senior-Project/assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="/HC26-Castillo-Alberto-Senior-Project/assets/css/main.css" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="/HC26-Castillo-Alberto-Senior-Project/assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="/HC26-Castillo-Alberto-Senior-Project/assets/css/ie8.css" /><![endif]-->
 </head>
 
-
 <body>
+    <script type="text/javascript">document.body.classList.add("is-loading");</script>
 
     <!-- Wrapper -->
 <div id="wrapper">
@@ -40,6 +39,28 @@
 		
 		    
 		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
 		
 		    
 		
@@ -51,46 +72,33 @@
 		<li><a href="#" class="button fit">Log In</a></li>
 	</ul>
 </nav>
- 
-    
-    
-<!-- Main -->
-<div id="main" class="alt">
+ <h1 id="proposal-draft-dual-arcade-game-brick-breaker--pong">Proposal Draft: Dual Arcade Game (Brick Breaker + Pong)</h1>
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>About</h1>
-		</header>
-		
-		<h1 id="proposal-draft-dual-mode-arcade-game-brick-breaker--pong">Proposal Draft: Dual-Mode Arcade Game (Brick Breaker + Pong)</h1>
+<p>This project aims to develop a <strong>dual-mode arcade game</strong> that combines two classics—<em>Brick Breaker</em> and <em>Pong</em>—into one polished application. The project is designed to strengthen my skills in <em>event loops, game state management, and modular design</em> while also gaining experience with a professional game engine (Godot).</p>
 
 <h2 id="platform">Platform</h2>
 <ul>
-  <li>Desktop graphical UI (macOs).</li>
-  <li>Optional future extension: Web App via HTML5/JavaScript.</li>
+  <li><strong>Primary</strong>: Desktop graphical UI (macOS, Windows, Linux).</li>
+  <li><strong>Optional Future Extension</strong>: Export to web via HTML5 (Godot supports this natively).</li>
 </ul>
 
 <h2 id="programming-languages">Programming Languages</h2>
 <ul>
-  <li><strong>Python (primary)</strong> — chosen for simplicity and access to the Pygame library.</li>
-  <li><strong>Alternative:</strong> JavaScript (if deploying as a browser game).</li>
-  <li>Python is preferred because it is beginner-friendly, has strong support for 2D games, and allows rapid prototyping.</li>
+  <li><strong>GDScript (primary)</strong> — a Python-like scripting language built into Godot, chosen for simplicity and integration with the engine [1].</li>
+  <li><strong>Alternative Consideration:</strong> C# (also supported by Godot), but GDScript is faster to prototype with.</li>
 </ul>
 
-<h2 id="frameworks--libraries">Frameworks / Libraries</h2>
+<h2 id="game-engine--framework">Game Engine / Framework</h2>
 <ul>
-  <li><strong>Pygame</strong> (library) — handles graphics, rendering, audio, input, and collisions.</li>
-  <li><strong>Random</strong> (stdlib) — adds variability in ball movement.</li>
-  <li><em>(Optional)</em> WebSockets/Socket — if I decide to support online multiplayer.</li>
-  <li><strong>Distinction:</strong> Pygame is a library (collection of tools); the project is not tied to a strict framework.</li>
+  <li><strong>Godot Engine</strong> — a free, open-source game engine with strong 2D support, a built-in editor, and cross-platform export [1].</li>
+  <li><strong>Node/Scene System</strong> — Godot’s design encourages modular components, making it ideal for managing game objects like paddles, balls, and bricks.</li>
+  <li><strong>Optional Libraries</strong> — could use <code class="language-plaintext highlighter-rouge">random</code> for ball movement variability or Godot’s built-in physics engine for collisions.</li>
 </ul>
 
 <h2 id="project-features">Project Features</h2>
 <ul>
   <li><strong>Brick Breaker Mode</strong>: Single-player paddle and ball, destructible bricks, scoring, lives, and difficulty scaling.</li>
-  <li><strong>Pong Mode</strong>: Two-player mode on the same computer (keyboard or game controllers), with score tracking and win condition.</li>
+  <li><strong>Pong Mode</strong>: Two-player mode on the same computer, with score tracking and win conditions.</li>
   <li><strong>Menu System</strong>: Select between Brick Breaker and Pong.</li>
   <li><strong>Pause/Restart</strong> functionality.</li>
   <li><strong>Sound effects</strong> for collisions and events.</li>
@@ -98,45 +106,103 @@
 
 <h2 id="comparable-solutions">Comparable Solutions</h2>
 <ul>
-  <li><em>Arkanoid/Breakout</em> (classic single-player).</li>
-  <li><em>Pong</em> (classic two-player).</li>
-  <li>My project differs by combining these modes into a single polished application.</li>
+  <li><em>Arkanoid/Breakout</em> — classic single-player with brick destruction [2].</li>
+  <li><em>Pong</em> — iconic two-player paddle game [3].</li>
+  <li><strong>Difference:</strong> My project combines both into one modern, polished application with clean UI and sound design.</li>
 </ul>
+
+<h2 id="overview-of-components">Overview of Components</h2>
+<p>The game will be organized into the following modules/scenes:</p>
+<ol>
+  <li><strong>Main Menu</strong> — allows selection between Brick Breaker and Pong.</li>
+  <li><strong>Game Scenes</strong> — separate scenes for Brick Breaker and Pong, each with its own rules.</li>
+  <li><strong>Input Handling</strong> — Godot’s Input Map system will manage controls.</li>
+  <li><strong>Game Logic</strong> — collision detection, scoring, and win/loss conditions.</li>
+  <li><strong>Rendering &amp; UI</strong> — Godot handles sprites, animations, and scoreboards.</li>
+  <li><strong>Audio</strong> — collision and win/loss sound effects integrated via Godot’s Audio nodes.</li>
+</ol>
+
+<p>These components will be tied together through Godot’s <strong>scene tree</strong> and <strong>main loop.</strong></p>
 
 <h2 id="new-stuff-load">“New Stuff” Load</h2>
 <ul>
-  <li>Learning more about <strong>event loops</strong> and <strong>game state management</strong> in Python.</li>
-  <li>Gaining experience with <strong>Pygame’s rendering loop</strong> and <strong>collision detection</strong>.</li>
-  <li>Organizing a game project into modules and managing assets (sprites, sounds).</li>
-  <li>Possibly learning simple networking if Pong is extended to online play.</li>
+  <li>Learning <strong>GDScript</strong> and Godot’s node/scene architecture.</li>
+  <li>Managing multiple <strong>game states</strong> in one project (menu, gameplay, pause).</li>
+  <li>Implementing physics and collisions with Godot’s 2D engine.</li>
+  <li>Exporting to multiple platforms (desktop, HTML5).</li>
 </ul>
 
 <h2 id="data-storage">Data Storage</h2>
 <ul>
-  <li>Minimal — local high scores stored in a text or JSON file.</li>
+  <li>Local high scores saved using Godot’s built-in JSON serialization.</li>
 </ul>
 
 <h2 id="hostingdeployment">Hosting/Deployment</h2>
 <ul>
-  <li>Local execution by running the Python script.</li>
-  <li>Distribution as a standalone executable using <strong>PyInstaller</strong>.</li>
-  <li><em>(Optional)</em> Browser deployment if the project is re-implemented in JavaScript/HTML5.</li>
+  <li><strong>Local execution</strong> via Godot export to desktop.</li>
+  <li><strong>Distribution</strong> as a standalone executable (Windows/Mac/Linux).</li>
+  <li><em>(Optional)</em> <strong>Web deployment</strong> using Godot’s HTML5 export feature.</li>
+</ul>
+
+<h2 id="comparison-of-game-engines">Comparison of Game Engines</h2>
+
+<h3 id="godot-vs-unity">Godot vs Unity</h3>
+<ul>
+  <li><strong>Unity</strong> is industry-standard for 3D and complex games, but has a steeper learning curve and heavier runtime [4].</li>
+  <li><strong>Godot</strong> is lightweight, open-source, and excels at 2D games — making it more appropriate for a project like Brick Breaker + Pong.</li>
+</ul>
+
+<h3 id="godot-vs-pygame">Godot vs Pygame</h3>
+<ul>
+  <li><strong>Pygame</strong> is a library, not a full engine. It requires more manual coding for scenes, physics, and collisions [5].</li>
+  <li><strong>Godot</strong> provides a visual editor, built-in physics, and a structured project workflow, reducing boilerplate code.</li>
+</ul>
+
+<h3 id="godot-vs-phaser-javascript">Godot vs Phaser (JavaScript)</h3>
+<ul>
+  <li><strong>Phaser</strong> is great for browser-based games but less flexible for desktop distribution [6].</li>
+  <li><strong>Godot</strong> supports both desktop and browser exports, while also giving more powerful tools for UI and physics.</li>
+</ul>
+
+<h3 id="why-i-chose-godot">Why I Chose Godot</h3>
+<p>Godot strikes the right balance for my project:</p>
+<ul>
+  <li><strong>Beginner-friendly</strong> with Python-like GDScript.</li>
+  <li><strong>Lightweight and open-source</strong> (no licensing fees).</li>
+  <li><strong>Strong 2D support</strong> — ideal for arcade-style games.</li>
+  <li><strong>Cross-platform</strong> export (desktop + HTML5) with minimal configuration.</li>
+  <li><strong>Structured workflow</strong> with nodes and scenes makes managing two game modes easier.</li>
 </ul>
 
 <h2 id="deliverables">Deliverables</h2>
 <ul>
-  <li>Fully functioning game with two playable modes.</li>
-  <li>Annotated bibliography with references (Pygame ©docs, tutorials, example projects).</li>
+  <li>Fully functioning game with <strong>two playable modes</strong>.</li>
+  <li>Annotated bibliography with references.</li>
   <li>GitHub repository with code and documentation.</li>
-  <li>Final write-up and demo video.</li>
+  <li>Final <strong>demo video and write-up</strong>.</li>
 </ul>
 
-	</div>
-</section>
+<h2 id="references">References</h2>
+<h2 id="references-annotated-biblioghraphy">References (Annotated Biblioghraphy)</h2>
+<ol>
+  <li><strong>Godot Engine Documentation</strong> — Main source for engine features, node/scene system, physics engine, and export options. (https://docs.godotengine.org/)</li>
+  <li><strong>GDScript Style Guide (Official)</strong> — Explains best practices for scripting in Godot; ensures clean, maintainable code. (https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html)</li>
+  <li><strong>Godot 4 Release Notes</strong> — Outlines scene improvements, 2D engine updates, and export features relevant to this project. (https://godotengine.org/article/godot-4-0-release)</li>
+  <li><strong>Arkanoid/Breakout (Atari, 1986)</strong> — Classic brick-breaker game used for comparison of mechanics. 
+(https://www.arcade-museum.com/game_detail.php?game_id=6939)</li>
+  <li><strong>Pong (Atari, 1972)</strong> — Historical inspiration for two-player paddle mechanics.<br />
+(https://www.atari.com/games/pong/)</li>
+  <li><strong>Unity Documentation</strong> — Used to contrast Unity’s professional 3D features with Godot’s lightweight 2D focus.
+(https://docs.unity3d.com/)</li>
+  <li><strong>Pygame Documentation</strong> — Shows differences between a library (Pygame) and a full engine (Godot).
+(https://www.pygame.org/docs/)</li>
+  <li><strong>Phaser Documentation</strong> — Resource for browser-based game engines, contrasted against Godot’s desktop-first workflow.
+(https://phaser.io/)
+9.<strong>Extra Godot Info</strong> - 
+(https://blenderartists.org/t/anyone-had-experiences-with-godot-engine-good-bad-ugly/1514292)</li>
+</ol>
 
-</div>
-
-    <!-- Contact -->
+ <!-- Contact -->
 <section id="contact">
 	<div class="inner">
 		<section>
