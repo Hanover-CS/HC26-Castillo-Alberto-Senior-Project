@@ -85,22 +85,36 @@ Godot strikes the right balance for my project:
 - GitHub repository with code and documentation.  
 - Final **demo video and write-up**.  
 
-## References
-## References (Annotated Biblioghraphy)
-1. **Godot Engine Documentation** — Main source for engine features, node/scene system, physics engine, and export options. (https://docs.godotengine.org/)
-2. **GDScript Style Guide (Official)** — Explains best practices for scripting in Godot; ensures clean, maintainable code. (https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html)
-3. **Godot 4 Release Notes** — Outlines scene improvements, 2D engine updates, and export features relevant to this project. (https://godotengine.org/article/godot-4-0-release) 
-4. **Arkanoid/Breakout (Atari, 1986)** — Classic brick-breaker game used for comparison of mechanics. 
-(https://www.arcade-museum.com/game_detail.php?game_id=6939)
+# References
+
+## References (Annotated Bibliography)
+
+1. **Godot Engine Documentation** — Main source for engine features, node/scene system, physics engine, and export options.  
+   [https://docs.godotengine.org/](https://docs.godotengine.org/)
+
+2. **GDScript Style Guide (Official)** — Explains best practices for scripting in Godot; ensures clean, maintainable code.  
+   [https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html)
+
+3. **Godot 4 Release Notes** — Outlines scene improvements, 2D engine updates, and export features relevant to this project.  
+   [https://godotengine.org/article/godot-4-0-release](https://godotengine.org/article/godot-4-0-release)
+
+4. **Arkanoid/Breakout (Atari, 1986)** — Classic brick-breaker game used for comparison of mechanics.  
+   [https://www.arcade-museum.com/game_detail.php?game_id=6939](https://www.arcade-museum.com/game_detail.php?game_id=6939)
+
 5. **Pong (Atari, 1972)** — Historical inspiration for two-player paddle mechanics.  
-(https://www.atari.com/games/pong/)
-6. **Unity Documentation** — Used to contrast Unity’s professional 3D features with Godot’s lightweight 2D focus.
-(https://docs.unity3d.com/)
-7. **Pygame Documentation** — Shows differences between a library (Pygame) and a full engine (Godot).
-(https://www.pygame.org/docs/)
-8. **Phaser Documentation** — Resource for browser-based game engines, contrasted against Godot’s desktop-first workflow.
-(https://phaser.io/)
-9.**Extra Godot Info** - 
-(https://blenderartists.org/t/anyone-had-experiences-with-godot-engine-good-bad-ugly/1514292)
+   [https://www.atari.com/games/pong/](https://www.atari.com/games/pong/)
+
+6. **Unity Documentation** — Used to contrast Unity’s professional 3D features with Godot’s lightweight 2D focus.  
+   [https://docs.unity3d.com/](https://docs.unity3d.com/)
+
+7. **Pygame Documentation** — Shows differences between a library (Pygame) and a full engine (Godot).  
+   [https://www.pygame.org/docs/](https://www.pygame.org/docs/)
+
+8. **Phaser Documentation** — Resource for browser-based game engines, contrasted against Godot’s desktop-first workflow.  
+   [https://phaser.io/](https://phaser.io/)
+
+9. **Extra Godot Info** — Community experiences with Godot engine.  
+   [https://blenderartists.org/t/anyone-had-experiences-with-godot-engine-good-bad-ugly/1514292](https://blenderartists.org/t/anyone-had-experiences-with-godot-engine-good-bad-ugly/1514292)
+
 
 
