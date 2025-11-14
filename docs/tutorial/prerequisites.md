@@ -1,18 +1,22 @@
 ---
-title: "Prerequisites"
----
-
 # Prerequisites
+---
 
-### Tools
-- **Godot 4.x** (Stable release)
-- A computer that can run Godot
-- A GitHub repo with GitHub Pages enabled
+Before following this tutorial, make sure you have the following:
 
-### Knowledge
-- Basic programming (variables, if/else, functions)
-- Very basic git familiarity (to commit and push your files)
+## Tools you need
+---
+
+
+- **Godot 4.0** installed  
+- A text editor (Godot script editor, VS Code, etc.)  
+- Basic familiarity with:
+  - Variables
+  - Functions
+  - 2D coordinate systems
+  - General programming  
 
 ---
 
-**Prev:** [Introduction](./intro.md) • **Next:** [Project Setup](./setup.md)
+Next: [Project Structure](project_structure.md)  
+Prev: [Introduction](introduction.md)
