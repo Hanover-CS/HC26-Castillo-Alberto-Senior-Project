@@ -4,9 +4,9 @@
 
 Bricks act as **Area2D** nodes that notify the Level when the ball hits them. This is where you’ll use **signals**.
 
----
 
 ## Brick Scene Setup
+---
 
 Create a new scene:
 
