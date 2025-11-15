@@ -16,7 +16,7 @@ These fundamentals give you everything you need to continue your senior project.
 
 ## See also
 
-- Godot Docs — [Signals](https://docs.godotengine.org/en/stable/tutorials/scripting/signals.html#signals)  
+- Godot Docs — [Collision Shapes](https://docs.godotengine.org/en/stable/tutorials/physics/collision_shapes_2d.html)  
 - Godot Docs — [Scenes & Nodes](https://docs.godotengine.org/en/stable/tutorials/scripting/nodes_and_scene_instances.html#nodes-and-scene-instances)  
 - Godot Docs — [RigidBody2D](https://docs.godotengine.org/en/stable/classes/class_rigidbody2d.html#class-rigidbody2d)
 
