@@ -1,0 +1,26 @@
+name: CI – Run Godot Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download Godot
+        run: |
+          GODOT_VERSION="4.3.0-stable"
+          wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_linux.x86_64.zip -O godot.zip
+          unzip godot.zip
+          mv Godot_v${GODOT_VERSION}_linux.x86_64 godot
+          chmod +x godot
+
+      - name: Run tests (headless)
+        run: |
+          ./godot --headless --quiet -s res://tests/run_tests.gd
